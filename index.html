@@ -103,7 +103,10 @@
                                                 <!-- Bottoni -->
                                                 <div class="flex gap-3 mb-4">
                                                     <button id="btnNo" class="flex-1 border border-gray bg-background text-black hover:bg-gray/10 font-semibold py-3 rounded-full text-sm transition">No</button>
-                                                    <button id="btnYes" class="flex-1 bg-red text-white hover:bg-red-500 font-semibold py-3 rounded-full text-sm transition">Sì</button>
+                                                    <button id="btnYes" class="flex-1 bg-red text-white hover:bg-red-500 font-semibold py-3 rounded-full text-sm transition flex items-center justify-center gap-2">
+                                                        <span id="btnYesText">Sì</span>
+                                                        <div id="btnYesSpinner" class="hidden w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -260,12 +263,14 @@ setTimeout(() => {
         // Click su Sì
         btnYes.addEventListener('click', (e) => {
             e.stopPropagation();
-            // Nasconde dialog conferma
-            confirmContent.classList.add('hidden');
 
-            // Mostra loading
-            loadingContent.classList.remove('hidden');
-            loadingContent.classList.add('flex');
+            const btnYesText = document.getElementById('btnYesText');
+            const btnYesSpinner = document.getElementById('btnYesSpinner');
+
+            // Disabilita pulsante e mostra spinner
+            btnYes.disabled = true;
+            btnYesText.classList.add('hidden');
+            btnYesSpinner.classList.remove('hidden');
 
             console.log('✓ SIMULAZIONE - Pagamento riscosso');
             console.log('Order:', orderNumber);
@@ -273,14 +278,19 @@ setTimeout(() => {
             console.log('Timestamp:', new Date().toISOString());
             console.log('NOTA: Nessuna chiamata al backend');
 
-            // Dopo 2 secondi mostra "Articolo ritirato"
+            // Dopo 2 secondi chiude dialog e mostra "Articolo ritirato"
             setTimeout(() => {
-                loadingContent.classList.add('hidden');
-                loadingContent.classList.remove('flex');
+                // Nasconde dialog conferma
+                confirmContent.classList.add('hidden');
 
                 // Mostra "Articolo ritirato"
                 pickedUpContent.classList.remove('hidden');
                 pickedUpContent.classList.add('flex');
+
+                // Reset pulsante
+                btnYes.disabled = false;
+                btnYesText.classList.remove('hidden');
+                btnYesSpinner.classList.add('hidden');
             }, 2000);
         });
 
