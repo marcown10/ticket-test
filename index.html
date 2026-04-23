@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Ordine SL-5533</title>
+    <link rel="stylesheet" href="https://web.slesh.it/assets/root-Bfg4yhwk.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"/>
+</head>
+<body>
+<div class="flex flex-col h-full">
+    <div class="hidden md:grid grid-rows-1 grid-cols-1 rounded-b-[40px] overflow-hidden md:sticky self-start w-full top-0 z-50 min-h-[120px] max-h-[120px]">
+        <div class="col-start-1 row-start-1">
+            <canvas class="w-full h-[120px] object-cover" punch="1" height="128" width="128"></canvas>
+        </div>
+        <div class="col-start-1 row-start-1 z-10 w-full h-full" style="mix-blend-mode:multiply"></div>
+        <div class="col-start-1 row-start-1 flex px-4 md:px-12 items-center z-20 justify-between">
+            <div class="flex-1 flex-basis-0 flex justify-start"></div>
+            <canvas class="h-[28px]" punch="1" height="128" width="128"></canvas>
+            <div class="flex-1 flex-basis-0 flex items-center justify-end gap-2">
+                <div class="relative">
+                    <button class="inline-flex cursor-pointer items-center gap-2 whitespace-nowrap py-2 px-6 rounded-full h-9.5 bg-transparent border-0">
+                        <div class="absolute inset-0 flex flex-col justify-center pl-1.5">
+                            <span class="text-base pl-2">🇮🇹</span>
+                        </div>
+                    </button>
+                </div>
+                <button class="inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-[14px] text-sm font-medium !bg-white border border-gray text-black hover:bg-white/90 h-9.5 px-6 py-2">
+                    <svg viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="size-4">
+                        <path d="M4.68116 8.1776C2.19515 8.40232 0.301161 10.5029 0.334165 12.9989V13.1254C0.334165 13.6087 0.725919 14.0004 1.20916 14.0004C1.69241 14.0004 2.08416 13.6087 2.08416 13.1254V12.9639C2.05786 11.4314 3.1888 10.1245 4.70916 9.93053C6.31405 9.77139 7.7441 10.9434 7.90324 12.5483C7.91265 12.6432 7.91741 12.7384 7.91749 12.8338V13.1254C7.91749 13.6087 8.30924 14.0004 8.79249 14.0004C9.27573 14.0004 9.66749 13.6087 9.66749 13.1254V12.8338C9.66465 10.2535 7.57063 8.16415 4.99042 8.167C4.88725 8.16713 4.78411 8.17066 4.68116 8.1776Z" fill="currentColor"></path>
+                        <path d="M5.00073 7C6.93372 7 8.50073 5.43298 8.50073 3.5C8.50073 1.56702 6.93372 0 5.00073 0C3.06775 0 1.50073 1.56702 1.50073 3.5C1.50265 5.43219 3.06854 6.99806 5.00073 7ZM5.00073 1.75C5.96722 1.75 6.75073 2.53351 6.75073 3.5C6.75073 4.46649 5.96722 5.25 5.00073 5.25C4.03424 5.25 3.25073 4.46649 3.25073 3.5C3.25073 2.53351 4.03424 1.75 5.00073 1.75Z" fill="currentColor"></path>
+                    </svg>
+                    Accedi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid md:hidden grid-rows-1 grid-cols-1 overflow-hidden self-start w-full sticky top-0 z-50 min-h-[80px] max-h-[80px] bg-light-white">
+        <div class="col-start-1 row-start-1 flex flex-col px-4 md:px-12 z-20 h-full">
+            <div class="flex items-center justify-between flex-grow">
+                <div class="flex-1 flex-basis-0 flex justify-start"></div>
+                <canvas class="h-[20px]" punch="1" height="128" width="128"></canvas>
+                <div class="flex-1 flex-basis-0 flex items-center justify-end gap-2">
+                    <button class="inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap text-sm font-medium size-10 rounded-full">🇮🇹</button>
+                    <button class="inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap text-sm font-medium !bg-white border border-gray text-black hover:bg-white/90 size-10 rounded-full">
+                        <svg viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="size-4">
+                            <path d="M4.68116 8.1776C2.19515 8.40232 0.301161 10.5029 0.334165 12.9989V13.1254C0.334165 13.6087 0.725919 14.0004 1.20916 14.0004C1.69241 14.0004 2.08416 13.6087 2.08416 13.1254V12.9639C2.05786 11.4314 3.1888 10.1245 4.70916 9.93053C6.31405 9.77139 7.7441 10.9434 7.90324 12.5483C7.91265 12.6432 7.91741 12.7384 7.91749 12.8338V13.1254C7.91749 13.6087 8.30924 14.0004 8.79249 14.0004C9.27573 14.0004 9.66749 13.6087 9.66749 13.1254V12.8338C9.66465 10.2535 7.57063 8.16415 4.99042 8.167C4.88725 8.16713 4.78411 8.17066 4.68116 8.1776Z" fill="currentColor"></path>
+                            <path d="M5.00073 7C6.93372 7 8.50073 5.43298 8.50073 3.5C8.50073 1.56702 6.93372 0 5.00073 0C3.06775 0 1.50073 1.56702 1.50073 3.5C1.50265 5.43219 3.06854 6.99806 5.00073 7ZM5.00073 1.75C5.96722 1.75 6.75073 2.53351 6.75073 3.5C6.75073 4.46649 5.96722 5.25 5.00073 5.25C4.03424 5.25 3.25073 4.46649 3.25073 3.5C3.25073 2.53351 4.03424 1.75 5.00073 1.75Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:h-layout md:overflow-y-scroll">
+        <div class="flex flex-col">
+            <div class="p-4 md:p-12 overflow-y-auto">
+                <div class="max-w-4xl mx-auto space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <h1 id="orderTitle" data-testid="order-detail-code" style="cursor: pointer;"></h1>
+                        </div>
+                        <h1 data-testid="order-detail-total">€ 10,00</h1>
+                    </div>
+                    <div class="flex sm:items-center flex-col sm:flex-row sm:justify-between">
+                        <h2 class="text-gray-2 truncate">QR FWD 2026</h2>
+                        <div class="flex flex-col sm:items-end">
+                            <div class="flex items-center gap-4 justify-between sm:justify-end">
+                                <h2 id="orderDate" class="text-gray-2"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12 space-y-1">
+                            <h3 class="truncate">BAR FDW</h3>
+                            <div class="grid grid-cols-12 gap-4">
+                                <div id="productCard" class="border border-gray text-card-foreground rounded-[30px] shadow-none bg-white relative col-span-12 md:col-span-6">
+                                    <!-- Overlay unico che cambia contenuto -->
+                                    <div id="mainOverlay" class="hidden absolute top-0 right-0 transition-all duration-300 bg-dark-purple-2/80 w-full h-full items-center justify-center z-10 rounded-[29px] px-4">
+
+                                        <!-- Contenuto "Articolo ritirato" -->
+                                        <div id="pickedUpContent" class="hidden flex-col gap-2 justify-center items-center">
+                                            <div class="bg-green p-2.5 rounded-full w-fit h-fit">
+                                                <svg viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="size-4.5 fill-white">
+                                                    <path d="M3.22883 7.6094C2.94497 7.60952 2.67274 7.49669 2.47219 7.29581L0.184609 5.00908C-0.0615362 4.76285 -0.0615362 4.36372 0.184609 4.1175C0.430832 3.87135 0.829961 3.87135 1.07618 4.1175L3.22883 6.27014L8.92382 0.575157C9.17004 0.329012 9.56917 0.329012 9.81539 0.575157C10.0615 0.821381 10.0615 1.22051 9.81539 1.46673L3.98547 7.29581C3.78492 7.49669 3.51269 7.60952 3.22883 7.6094Z" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                            <h2 class="text-white">Articolo ritirato</h2>
+                                        </div>
+
+                                        <!-- Contenuto "Conferma ritiro" (nascosto inizialmente) -->
+                                        <div id="confirmContent" class="hidden w-full max-w-[280px]">
+                                            <div class="relative bg-[#4B5563] rounded-[20px] p-5">
+                                                <!-- Tacche laterali -->
+                                                <div class="absolute -left-[8px] top-1/2 -translate-y-1/2 w-[16px] h-[16px] rounded-full" style="background: rgba(0, 0, 0, 0.6);"></div>
+                                                <div class="absolute -right-[8px] top-1/2 -translate-y-1/2 w-[16px] h-[16px] rounded-full" style="background: rgba(0, 0, 0, 0.6);"></div>
+
+                                                <!-- Domanda -->
+                                                <div class="text-white text-center font-semibold mb-5 text-base">Confermi il ritiro?</div>
+
+                                                <!-- Bottoni -->
+                                                <div class="flex gap-3 mb-4">
+                                                    <button id="btnNo" class="flex-1 text-white font-semibold py-3 rounded-full text-sm transition" style="background-color: #2D3139;">No</button>
+                                                    <button id="btnYes" class="flex-1 text-white font-semibold py-3 rounded-full text-sm transition" style="background-color: #EF4444;">Sì</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Loading (nascosto inizialmente) -->
+                                        <div id="loadingContent" class="hidden flex-col gap-2 justify-center items-center">
+                                            <div class="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+                                            <span class="text-white font-semibold">Elaborazione...</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-4 flex flex-row justify-between gap-x-2 items-center">
+                                        <div class="flex flex-row gap-x-2 truncate">
+                                            <div class="relative">
+                                                <canvas class="shrink-0 object-cover rounded-[14px] size-[50px]" punch="1" height="128" width="128"></canvas>
+                                            </div>
+                                            <div class="flex flex-col truncate">
+                                                <h4 class="truncate">DRINK</h4>
+                                                <p class="text-green">x1</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-1.5">
+                                            <span class="inline-flex items-center justify-center rounded-full border py-0.5 font-medium w-fit whitespace-nowrap shrink-0 gap-1 border-transparent bg-black text-white text-xs px-[0.35rem]">€ 10,00</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-2 pt-6">
+                                        <div class="flex items-center justify-between gap-2 p-4 border-t-2 border-dashed border-t-gray relative">
+                                            <div class="z-20 w-[10px] h-[20px] bg-light-white absolute -top-[11px] -left-[1px] rounded-tr-[8px] rounded-br-[8px] border border-gray border-l-0"></div>
+                                            <div class="z-20 w-[5px] h-[10px] bg-light-white absolute -top-[19.5px] -left-[1px]">
+                                                <div class="w-[5px] h-[10px] border border-gray border-t-0 border-r-0 rounded-bl-[5px] bg-dark-purple-2/80"></div>
+                                            </div>
+                                            <div class="z-20 w-[5px] h-[10px] bg-light-white absolute top-[8px] -left-[1px]">
+                                                <div class="w-[5px] h-[10px] border border-gray border-b-0 border-r-0 rounded-tl-[5px] bg-dark-purple-2/80"></div>
+                                            </div>
+                                            <div class="z-20 w-[10px] h-[20px] bg-light-white absolute -top-[11px] -right-[1px] rounded-tl-[8px] rounded-bl-[8px] border border-gray border-r-0"></div>
+                                            <div class="z-20 w-[5px] h-[10px] bg-light-white absolute -top-[19.5px] -right-[1px]">
+                                                <div class="w-[5px] h-[10px] border border-gray border-t-0 border-l-0 rounded-br-[5px] bg-dark-purple-2/80"></div>
+                                            </div>
+                                            <div class="z-20 w-[5px] h-[10px] bg-light-white absolute top-[8px] -right-[1px]">
+                                                <div class="w-[5px] h-[10px] border border-gray border-b-0 border-l-0 rounded-tr-[5px] bg-dark-purple-2/80"></div>
+                                            </div>
+                                            <div class="h-[28px]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-sm py-2 md:max-w-[300px] mx-auto">L'ordine non è rimborsabile in caso di mancato ritiro dei prodotti acquistati</p>
+                    <div class="flex flex-col md:flex-row gap-4 md:justify-center w-full md:items-start">
+                        <button class="inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap font-medium bg-green text-white fill-white hover:bg-green-hover h-15 rounded-[26px] text-lg px-6 md:rounded-[14px] md:text-sm md:h-9.5 md:px-6 md:py-2 w-full md:w-auto">Nuovo ordine</button>
+                        <button class="inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap font-medium border border-gray bg-background text-black hover:bg-gray/10 h-15 rounded-[26px] text-lg px-6 md:rounded-[14px] md:text-sm md:h-9.5 md:px-6 md:py-2 w-full md:w-auto">Altro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full py-4 md:mt-auto md:sticky md:bottom-0 bg-light-white pb-[86px] md:pb-4">
+        <div class="flex flex-col md:flex-row items-center justify-around gap-6 text-center md:text-left px-4 md:px-12">
+            <div class="flex items-center">
+                <svg viewBox="0 0 889 157" fill="none" width="120" height="28" xmlns="http://www.w3.org/2000/svg" class="inline-block w-[120px] h-[28px]">
+                    <path d="M226.203 2.28882e-05V119.571C226.203 120.909 227.096 121.802 228.434 121.802H339.082V156.156H224.419C206.572 156.156 191.849 141.433 191.849 123.586V2.28882e-05H226.203Z" fill="#171717"></path>
+                    <path d="M418.944 2.28882e-05H518.884V34.3543H418.944C405.113 34.3543 393.959 45.5084 393.959 59.3393V60.6778H488.545V95.0321H394.406V96.3706C394.406 110.202 405.56 121.356 419.391 121.356H519.33V155.71H419.391C386.821 155.71 360.051 128.94 360.051 96.3706V58.8931C359.605 26.7696 386.375 2.28882e-05 418.944 2.28882e-05Z" fill="#171717"></path>
+                    <path d="M567.516 80.755C551.008 74.9549 539.854 59.3393 539.854 41.4929C539.854 18.7388 558.592 2.28882e-05 581.347 2.28882e-05H699.133V34.3543H581.347C577.331 34.3543 574.208 37.4775 574.208 41.4929C574.208 44.616 575.993 47.293 578.67 48.1853L679.056 74.9549L680.394 75.401C696.902 81.2011 708.056 96.8167 708.056 114.663C708.056 137.417 689.317 156.156 666.563 156.156H548.777V121.802H666.563C670.579 121.802 673.702 118.679 673.702 114.663C673.702 111.54 671.917 108.863 669.24 107.971L568.854 81.2011L567.516 80.755Z" fill="#171717"></path>
+                    <path d="M763.38 2.28882e-05V60.6778H853.95V2.28882e-05H888.305V156.156H853.95V95.4782H763.38V156.156H729.026V2.28882e-05H763.38Z" fill="#171717"></path>
+                    <path d="M161.956 2.28882e-05H47.7393V34.3543H161.956V2.28882e-05Z" fill="#171717"></path>
+                    <path d="M143.664 75.401L142.325 74.9549L47.7393 49.5238V85.2166L132.064 107.971C134.74 108.863 136.525 111.54 136.525 114.663C136.525 118.679 133.402 121.802 129.387 121.802H11.6003V156.156H129.387C152.141 156.156 170.879 137.417 170.879 114.663C171.326 97.2629 160.172 81.2011 143.664 75.401Z" fill="#171717"></path>
+                    <path d="M7.13871 58.0008H34.3545V23.6465H7.13871H0.00012207V58.0008H6.69252C7.13868 58.447 7.13874 59.3393 7.5849 59.7854V58.0008H7.13871Z" fill="#944BBB"></path>
+                </svg>
+            </div>
+            <div class="text-center text-sm">
+                <p>Slesh Srl - Via Carlo Farini, 53 Milano 20159</p>
+                <p>P. IVA: 12449800965 - Numero REA: MI - 2662527</p>
+            </div>
+            <div>
+                <a href="mailto:support@slesh.it" class="flex cursor-pointer items-center gap-2">support@slesh.it</a>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center text-xs">
+            <a class="flex items-center cursor-pointer gap-2 hover:underline" href="/legal" target="_blank">Documenti Legali</a>
+        </div>
+    </footer>
+</div>
+
+
+<script>
+// Genera numero ordine random
+function generateOrderNumber() {
+    const prefix = 'SL-';
+    const randomNum = Math.floor(1000 + Math.random() * 9000);
+    return prefix + randomNum;
+}
+
+// Formatta data in italiano
+function formatDate() {
+    const now = new Date();
+    const months = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno',
+                    'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+    const day = now.getDate();
+    const month = months[now.getMonth()];
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+
+    return `${day} ${month} ${year}, ${hours}:${minutes}`;
+}
+
+// Inizializza numero ordine e data
+const orderNumber = generateOrderNumber();
+const orderTitleEl = document.getElementById('orderTitle');
+const orderDateEl = document.getElementById('orderDate');
+
+if (orderTitleEl) {
+    orderTitleEl.textContent = `Ordine ${orderNumber}`;
+}
+if (orderDateEl) {
+    orderDateEl.textContent = formatDate();
+}
+
+setTimeout(() => {
+    const orderTitle = document.getElementById('orderTitle');
+    const productCard = document.getElementById('productCard');
+    const mainOverlay = document.getElementById('mainOverlay');
+    const pickedUpContent = document.getElementById('pickedUpContent');
+    const confirmContent = document.getElementById('confirmContent');
+    const loadingContent = document.getElementById('loadingContent');
+    const btnYes = document.getElementById('btnYes');
+    const btnNo = document.getElementById('btnNo');
+
+    if (orderTitle && productCard && mainOverlay && pickedUpContent && confirmContent && loadingContent) {
+        // Funzione per mostrare dialog
+        const showConfirmDialog = () => {
+            // Assicura che "Articolo ritirato" sia nascosto
+            pickedUpContent.classList.add('hidden');
+            pickedUpContent.classList.remove('flex');
+
+            // Mostra overlay e dialog conferma
+            mainOverlay.classList.remove('hidden');
+            mainOverlay.classList.add('flex');
+            confirmContent.classList.remove('hidden');
+        };
+
+        // Click su titolo ordine
+        orderTitle.addEventListener('click', showConfirmDialog);
+
+        // Click su card prodotto
+        productCard.addEventListener('click', (e) => {
+            // Evita di aprire se si clicca sui pulsanti del dialog
+            if (!e.target.closest('#confirmContent') && !e.target.closest('#pickedUpContent')) {
+                showConfirmDialog();
+            }
+        });
+
+        // Click su Sì
+        btnYes.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Nasconde dialog conferma
+            confirmContent.classList.add('hidden');
+
+            console.log('✓ SIMULAZIONE - Pagamento riscosso');
+            console.log('Order:', orderNumber);
+            console.log('Amount: €10,00');
+            console.log('Timestamp:', new Date().toISOString());
+            console.log('NOTA: Nessuna chiamata al backend');
+
+            // Mostra "Articolo ritirato"
+            pickedUpContent.classList.remove('hidden');
+            pickedUpContent.classList.add('flex');
+        });
+
+        // Click su No - chiude tutto
+        btnNo.addEventListener('click', (e) => {
+            e.stopPropagation();
+            confirmContent.classList.add('hidden');
+            mainOverlay.classList.add('hidden');
+            mainOverlay.classList.remove('flex');
+        });
+    }
+}, 500);
+</script>
+</body>
+</html>
