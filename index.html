@@ -264,15 +264,25 @@ setTimeout(() => {
             // Nasconde dialog conferma
             confirmContent.classList.add('hidden');
 
+            // Mostra loading
+            loadingContent.classList.remove('hidden');
+            loadingContent.classList.add('flex');
+
             console.log('✓ SIMULAZIONE - Pagamento riscosso');
             console.log('Order:', orderNumber);
             console.log('Amount: €10,00');
             console.log('Timestamp:', new Date().toISOString());
             console.log('NOTA: Nessuna chiamata al backend');
 
-            // Mostra "Articolo ritirato"
-            pickedUpContent.classList.remove('hidden');
-            pickedUpContent.classList.add('flex');
+            // Dopo 2 secondi mostra "Articolo ritirato"
+            setTimeout(() => {
+                loadingContent.classList.add('hidden');
+                loadingContent.classList.remove('flex');
+
+                // Mostra "Articolo ritirato"
+                pickedUpContent.classList.remove('hidden');
+                pickedUpContent.classList.add('flex');
+            }, 2000);
         });
 
         // Click su No - chiude tutto
